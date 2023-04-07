@@ -70,7 +70,17 @@ npm ci
 npm run dev
 ```
 
-The same command could also used for development (but no work is currently planned as the component is feature-complete).
+### Development
+
+The command to run the examples could is used for development (but no work is currently planned as the component is feature-complete).
+
+To publish a new version:
+
+```shell
+npm version <major|minor|patch|…>
+npm publish
+git push --tags origin HEAD:main
+```
 
 ## Copyright / License
 
