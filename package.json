@@ -19,10 +19,10 @@
   "scripts": {
     "dev": "vite",
     "build": "npm run -s build:vite && npm run -s build:declarations",
-    "build:vite": "tsc && vite build",
+    "build:vite": "vite build",
     "build:declarations": "npx tsc --noEmit false --emitDeclarationOnly && rm -rf dist/types/example/",
     "clean": "rm -rf dist",
-    "dist": "npm run -s clean && npm run -s build",
+    "dist": "tsc && npm run -s clean && npm run -s build",
     "preview": "vite preview",
     "test": "npm run dist",
     "prepublishOnly": "npm run build"
