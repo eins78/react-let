@@ -78,7 +78,7 @@ To publish a new version:
 
 ```shell
 npm version <major|minor|patch|…>
-npm publish
+npm publish && \
 git push --tags origin HEAD:main
 ```
 
