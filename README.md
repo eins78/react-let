@@ -70,7 +70,28 @@ npm ci
 npm run dev
 ```
 
-### Development
+## Alternatives
+
+Instead of using this component, you can also using an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) inside which you can declare JavaScript variables normally (i.e. you can use statements and not just expressions).
+
+```tsx
+export const ExampleVanilla = () => (
+  <div>
+    {(() => {
+      const result = "expensive-calculation-result";
+      const another = 42;
+
+      return (
+        <p>
+          {result}. {another}.
+        </p>
+      );
+    })()}
+  </div>
+);
+```
+
+## Development
 
 The command to run the examples could is used for development (but no work is currently planned as the component is feature-complete).
 

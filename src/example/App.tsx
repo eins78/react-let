@@ -52,6 +52,21 @@ export const ExampleAsync = () => {
   );
 };
 
+export const ExampleVanilla = () => (
+  <div>
+    {(() => {
+      const result = "expensive-calculation-result";
+      const another = 42;
+
+      return (
+        <p>
+          {result}. {another}.
+        </p>
+      );
+    })()}
+  </div>
+);
+
 function App() {
   return (
     <div className="App">
