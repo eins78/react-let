@@ -71,3 +71,9 @@ npm run dev
 ```
 
 The same command could also used for development (but no work is currently planned as the component is feature-complete).
+
+## Copyright / License
+
+© Max F. Albrecht <https://github.com/eins78>
+
+License: MIT <https://eins78.mit-license.org>
