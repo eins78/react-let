@@ -7,18 +7,24 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/my-lib.umd.cjs",
-  "module": "./dist/my-lib.js",
+  "main": "./dist/react-let.umd.cjs",
+  "module": "./dist/react-let.js",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
+      "import": "./dist/react-let.js",
+      "require": "./dist/react-let.umd.cjs"
     }
   },
+  "types": "./dist/types/main.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npm run -s build:vite && npm run -s build:declarations",
+    "build:vite": "tsc && vite build",
+    "build:declarations": "npx tsc --noEmit false --emitDeclarationOnly && rm -rf dist/types/example/",
+    "clean": "rm -rf dist",
+    "dist": "npm run -s clean && npm run -s build",
     "preview": "vite preview",
+    "test": "npm run dist",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
