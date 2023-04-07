@@ -18,6 +18,6 @@
     "declaration": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"],
+  "include": ["src", "src/example"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
