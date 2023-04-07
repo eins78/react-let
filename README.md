@@ -62,7 +62,7 @@ export const ExampleAsync = () => {
 };
 ```
 
-More examples can be found in `src/example/App.tsx`,
+All examples can be found in `src/example/App.tsx`,
 and be can be run using:
 
 ```shell
@@ -72,7 +72,7 @@ npm run dev
 
 ## Alternatives
 
-Instead of using this component, you can also using an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) inside which you can declare JavaScript variables normally (i.e. you can use statements and not just expressions).
+Instead of using this component, you can use an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) inside which you can declare JavaScript variables normally (i.e. you can use statements and not just expressions).
 
 ```tsx
 export const ExampleVanilla = () => (
