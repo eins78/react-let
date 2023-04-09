@@ -1,11 +1,23 @@
 # `react-let`
 
+<a href="https://www.npmjs.com/package/react-let"><img src="https://img.shields.io/npm/v/react-let.svg?sanitize=true" alt="Version"></a>
+<a href="https://www.npmjs.com/package/react-let"><img src="https://img.shields.io/npm/l/react-let.svg?sanitize=true" alt="License"></a>
+ 
+
 Like `(let)` in Lisp, [Clojure](https://clojuredocs.org/clojure.core/let), etc., but for React/JSX.
 
 Makes it easier to declare variables deep inside a JSX tree,
 which are then passed to a `children` render function.
 
 When used with TypeScript, the render function arguments are infered from the props given to `<Let>`.
+
+## Installation
+
+```shell
+npm add react-let
+# alternative:
+yarn add react-let
+```
 
 ## Usage Examples
 
